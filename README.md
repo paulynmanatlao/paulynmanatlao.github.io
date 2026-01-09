@@ -18,7 +18,6 @@
             color: #e0e0e0;
         }
 
-        /* NAVIGATION BAR */
         nav {
             position: fixed;
             top: 0;
@@ -143,7 +142,6 @@
 </head>
 <body>
 
-    <!-- NAVIGATION -->
     <nav>
         <ul>
             <li><a href="#home"><i class="fas fa-house"></i>HOME</a></li>
@@ -153,11 +151,9 @@
         </ul>
     </nav>
 
-    <!-- HEADER -->
     <header id="home">
         <img src="https://uploads.onecompiler.io/44a2gqpwf/44a3an3gg/1000002594.jpg" alt="Profile Picture">
-        <h1>PAULYN JOY MANATLAO</h1>
-       
+        <h1>Paulyn Joy Manatlao</h1>
 
         <div class="quote">
             “Despite pain and challenge, strength and hope will lead you to victory”
@@ -165,7 +161,6 @@
         </div>
     </header>
 
-    <!-- ABOUT ME -->
     <section id="about">
         <h2>About Me</h2>
         <p>
@@ -178,20 +173,17 @@
         </p>
     </section>
 
-
-    <!-- SKILLS -->
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>Critical Thinking
-            <li>Problem Solving</li>         
+            <li>Critical Thinking</li>
+            <li>Problem Solving</li>
             <li>Attention to Detail</li>
             <li>Analytical Thinking</li>
             <li>Willingness to Learn New Technologies</li>
         </ul>
     </section>
 
-    <!-- CONTACT -->
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="#">paulynjoynebresmanatlao@gmail.com</a></p>
@@ -199,9 +191,8 @@
         <p>GitHub: <a href="#">github.com/yourusername</a></p>
     </section>
 
-    <!-- FOOTER -->
     <footer>
-        <p>© 2026 PAULYN JOY MANATLAO</p>
+        <p>© 2026 Paulyn Joy Manatlao</p>
     </footer>
 
 </body>
