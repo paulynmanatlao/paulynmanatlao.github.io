@@ -1,199 +1,233 @@
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Personal Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paulyn Joy Manatlao | Floral Portfolio</title>
 
-    <!-- FONT AWESOME ICONS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: radial-gradient(circle at top, #0f2027, #000000);
-            color: #e0e0e0;
-        }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background:
+        radial-gradient(circle at top left, #ffe4ef 0%, transparent 50%),
+        radial-gradient(circle at bottom right, #fcd6e6 0%, transparent 50%),
+        linear-gradient(to bottom, #fff1f7, #ffffff);
+      color: #4a4a4a;
+      overflow-x: hidden;
+    }
 
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(0, 0, 0, 0.85);
-            padding: 12px 0;
-            box-shadow: 0 0 15px #00ffff55;
-            z-index: 1000;
-        }
+    header {
+      text-align: center;
+      padding: 90px 20px 60px;
+      background: rgba(255, 255, 255, 0.8);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 10px 30px rgba(255, 182, 193, 0.35);
+    }
 
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            margin: 0;
-            padding: 0;
-        }
+    .profile-pic {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 5px solid #ffb6c1;
+      box-shadow: 0 10px 25px rgba(255, 182, 193, 0.45);
+    }
 
-        nav a {
-            color: #00ffff;
-            text-decoration: none;
-            font-weight: bold;
-            letter-spacing: 1px;
-            font-size: 0.95em;
-        }
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-        nav a i {
-            margin-right: 6px;
-        }
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #c94f7c;
+      margin-bottom: 8px;
+    }
 
-        nav a:hover {
-            text-shadow: 0 0 8px #00ffff;
-        }
+    /* Motto */
+    .motto {
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #9a5a72;
+      max-width: 600px;
+      margin: 0 auto 8px;
+      line-height: 1.5;
+    }
 
-        header {
-            text-align: center;
-            padding: 120px 20px 60px;
-            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-            box-shadow: 0 0 20px #00ffff55;
-        }
+    .warrior {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #c94f7c;
+      margin-bottom: 12px;
+    }
 
-        header img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid #00ffff;
-            box-shadow: 0 0 25px #00ffff;
-            margin-bottom: 20px;
-        }
+    header p {
+      font-size: 0.9rem;
+      color: #7a4a5a;
+      letter-spacing: 1px;
+    }
 
-        header h1 {
-            font-size: 1.5em;
-            margin: 10px 0 5px;
-            letter-spacing: 2px;
-        }
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 20px 0;
+    }
 
-        header p {
-            color: #00ffff;
-            font-size: 0.80em;
-        }
+    nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #c94f7c;
+      transition: 0.3s;
+    }
 
-        .quote {
-            font-style: italic;
-            font-size: 1.10em;
-            color: #c9ffff;
-            max-width: 600px;
-            margin: 15px auto 0;
-            line-height: 1.6;
-        }
+    nav a:hover {
+      color: #ff6fa5;
+      text-shadow: 0 0 6px #ffc1d9;
+    }
 
-        .quote span {
-            display: block;
-            margin-top: 6px;
-            color: #00ffff;
-            font-weight: bold;
-        }
+    section {
+      max-width: 900px;
+      margin: 50px auto;
+      padding: 0 20px;
+    }
 
-        section {
-            margin: 30px auto;
-            max-width: 900px;
-            background: rgba(255, 255, 255, 0.05);
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px #00ffff22;
-        }
+    section h2 {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      color: #c94f7c;
+      margin-bottom: 30px;
+    }
 
-        h2 {
-            color: #00ffff;
-            border-bottom: 2px solid #00ffff;
-            padding-bottom: 10px;
-            letter-spacing: 1px;
-        }
+    .about, .skills, .contact {
+      background: rgba(255, 255, 255, 0.85);
+      padding: 35px;
+      border-radius: 22px;
+      box-shadow: 0 15px 35px rgba(255, 182, 193, 0.3);
+    }
 
-        ul {
-            list-style: none;
-            padding: 0;
-        }
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
 
-        ul li::before {
-            content: "▹ ";
-            color: #00ffff;
-        }
+    .skill {
+      background: #fff3f8;
+      padding: 20px;
+      border-radius: 15px;
+      text-align: center;
+      font-weight: 500;
+      color: #b03a64;
+      box-shadow: 0 8px 20px rgba(255, 182, 193, 0.25);
+    }
 
-        footer {
-            text-align: center;
-            padding: 20px;
-            color: #777;
-            font-size: 0.9em;
-        }
+    .contact {
+      text-align: center;
+    }
 
-        a {
-            color: #00ffff;
-            text-decoration: none;
-        }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 30px;
+      background: linear-gradient(135deg, #c94f7c, #ff85b3);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 500;
+      transition: 0.3s;
+    }
 
-        a:hover {
-            text-shadow: 0 0 5px #00ffff;
-        }
-    </style>
+    .contact a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 20px #ffb6c1;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      color: #8a5a6a;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
+
 <body>
 
-    <nav>
-        <ul>
-            <li><a href="#home"><i class="fas fa-house"></i>HOME</a></li>
-            <li><a href="#about"><i class="fas fa-user"></i>ABOUT ME</a></li>
-            <li><a href="#skills"><i class="fas fa-code"></i>SKILLS</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i>CONTACT</a></li>
-        </ul>
-    </nav>
+  <!-- Header -->
+  <header>
+    <div class="profile-pic">
+      <img src="https://uploads.onecompiler.io/44a2gqpwf/44a3vxvb4/1000008314.jpg" alt="Paulyn Joy Manatlao">
+    </div>
 
-    <header id="home">
-        <img src="https://uploads.onecompiler.io/44a2gqpwf/44a3an3gg/1000002594.jpg" alt="Profile Picture">
-        <h1>Paulyn Joy Manatlao</h1>
+    <h1>Paulyn Joy Manatlao</h1>
 
-        <div class="quote">
-            “Despite pain and challenge, strength and hope will lead you to victory”
-            <span>- Lupus Warrior</span>
-        </div>
-    </header>
+    <div class="motto">
+      “Despite pain and challenge, strength and hope will lead you to victory.”
+    </div>
+    <div class="warrior">– Lupus Warrior</div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a dedicated and motivated student with a strong interest in modern web technologies.
-            I enjoy creating futuristic, clean, and user-friendly designs that combine creativity and functionality.
-        </p>
-        <p>
-            My personal journey has taught me resilience, patience, and strength — values that I bring into
-            my studies, projects, and future career in technology.
-        </p>
-    </section>
+    <p>Web Enthusiast • Creative Thinker • Lifelong Learner</p>
+  </header>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Critical Thinking</li>
-            <li>Problem Solving</li>
-            <li>Attention to Detail</li>
-            <li>Analytical Thinking</li>
-            <li>Willingness to Learn New Technologies</li>
-        </ul>
-    </section>
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="#">paulynjoynebresmanatlao@gmail.com</a></p>
-        <p>Facebook: <a href="#">facebook.com/yourprofile</a></p>
-        <p>GitHub: <a href="#">github.com/yourusername</a></p>
-    </section>
+  <!-- About -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I am Paulyn Joy Manatlao, a creative individual who believes that resilience, passion, and purpose
+      can turn challenges into strength. Living with lupus has taught me patience, determination, and the
+      value of hope. Through web design and creative expression, I strive to build meaningful digital
+      experiences while continuously learning and growing—both personally and professionally.
+    </p>
+  </section>
 
-    <footer>
-        <p>© 2026 Paulyn Joy Manatlao</p>
-    </footer>
+  <!-- Skills -->
+  <section id="skills" class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skills-list">
+      <div class="skill">HTML & CSS</div>
+      <div class="skill">Basic JavaScript</div>
+      <div class="skill">Responsive Design</div>
+      <div class="skill">Creative UI Design</div>
+      <div class="skill">Beginner Web Development</div>
+      <div class="skill">Content Layout & Styling</div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Let’s connect 💐</p>
+
+    <a href="mailto:paulynjoynebresmanatlao@gmail.com">Email</a>
+    <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank">GitHub</a>
+    <a href="https://facebook.com/YOUR-FACEBOOK-USERNAME" target="_blank">Facebook</a>
+  </section>
+
+  <footer>
+    &copy; 2026 Paulyn Joy Manatlao. All rights reserved.
+  </footer>
 
 </body>
-</html>
+</html>        
