@@ -1,10 +1,16 @@
-#Portfolio
-!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My High-Tech Portfolio</title>
+    <title>My Personal Portfolio</title>
+
+    <!-- FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
             margin: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -12,9 +18,45 @@
             color: #e0e0e0;
         }
 
+        /* NAVIGATION BAR */
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.85);
+            padding: 12px 0;
+            box-shadow: 0 0 15px #00ffff55;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            color: #00ffff;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-size: 0.95em;
+        }
+
+        nav a i {
+            margin-right: 6px;
+        }
+
+        nav a:hover {
+            text-shadow: 0 0 8px #00ffff;
+        }
+
         header {
             text-align: center;
-            padding: 60px 20px;
+            padding: 120px 20px 60px;
             background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
             box-shadow: 0 0 20px #00ffff55;
         }
@@ -30,14 +72,30 @@
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 1.5em;
             margin: 10px 0 5px;
             letter-spacing: 2px;
         }
 
         header p {
             color: #00ffff;
-            font-size: 1.1em;
+            font-size: 0.80em;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 1.10em;
+            color: #c9ffff;
+            max-width: 600px;
+            margin: 15px auto 0;
+            line-height: 1.6;
+        }
+
+        .quote span {
+            display: block;
+            margin-top: 6px;
+            color: #00ffff;
+            font-weight: bold;
         }
 
         section {
@@ -85,46 +143,65 @@
 </head>
 <body>
 
-    <!-- HEADER WITH PROFILE IMAGE -->
-    <header>
-        <!-- Replace profile.jpg with your own image file -->
-        <img src="https://uploads.onecompiler.io/44a2gqpwf/44a2gnwqu/1000008755.jpg" />
-        <h1>Your Name</h1>
-        <p>High-Tech | Future Web Developer</p>
+    <!-- NAVIGATION -->
+    <nav>
+        <ul>
+            <li><a href="#home"><i class="fas fa-house"></i>HOME</a></li>
+            <li><a href="#about"><i class="fas fa-user"></i>ABOUT ME</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i>SKILLS</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i>CONTACT</a></li>
+        </ul>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="home">
+        <img src="https://uploads.onecompiler.io/44a2gqpwf/44a3an3gg/1000002594.jpg" alt="Profile Picture">
+        <h1>PAULYN JOY MANATLAO</h1>
+       
+
+        <div class="quote">
+            “Despite pain and challenge, strength and hope will lead you to victory”
+            <span>- Lupus Warrior</span>
+        </div>
     </header>
 
     <!-- ABOUT ME -->
-    <section>
+    <section id="about">
         <h2>About Me</h2>
         <p>
-            I am a passionate student learning modern web technologies. 
-            I enjoy building clean, futuristic, and user-friendly interfaces 
-            while continuously improving my technical skills.
+            I am a dedicated and motivated student with a strong interest in modern web technologies.
+            I enjoy creating futuristic, clean, and user-friendly designs that combine creativity and functionality.
+        </p>
+        <p>
+            My personal journey has taught me resilience, patience, and strength — values that I bring into
+            my studies, projects, and future career in technology.
         </p>
     </section>
 
+
     <!-- SKILLS -->
-    <section>
+    <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>HTML5 & CSS3</li>
-            <li>Responsive Web Design</li>
-            <li>Basic JavaScript</li>
-            <li>UI / UX Fundamentals</li>
+            <li>Critical Thinking
+            <li>Problem Solving</li>         
+            <li>Attention to Detail</li>
+            <li>Analytical Thinking</li>
+            <li>Willingness to Learn New Technologies</li>
         </ul>
     </section>
 
     <!-- CONTACT -->
-    <section>
+    <section id="contact">
         <h2>Contact</h2>
-        <p>Email: yourname@email.com</p>
+        <p>Email: <a href="#">paulynjoynebresmanatlao@gmail.com</a></p>
         <p>Facebook: <a href="#">facebook.com/yourprofile</a></p>
         <p>GitHub: <a href="#">github.com/yourusername</a></p>
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 Your Name | High-Tech Portfolio</p>
+        <p>© 2026 PAULYN JOY MANATLAO</p>
     </footer>
 
 </body>
