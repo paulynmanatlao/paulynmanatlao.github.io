@@ -1,64 +1,72 @@
-# 🌸 Paulyn Joy Manatlao – Personal Portfolio
+# 💖 Paulyn Joy Manatlao – Neon Pink Portfolio
 
 Welcome to my personal portfolio website.  
-This project showcases my journey as a creative web enthusiast, highlighting my skills, values, and passion for learning and design.
+This project represents my journey as a **Computer Science student**, **creative web enthusiast**, and a **Lupus Warrior**—combining resilience, technology, and self-expression through design.
 
 🔗 **Live Website:**  
 https://paulynjoymanatlao.github.io
 
 ---
 
-## ✨ About This Project
+## ✨ About the Project
 
-This portfolio is designed with a **soft floral aesthetic** that reflects elegance, resilience, and creativity.  
-It represents not only my technical skills but also my personal story as a **Lupus Warrior**—turning challenges into strength and growth.
+This portfolio features a **neon pink cyber-inspired aesthetic** with animated floating particles, symbolizing creativity, strength, and continuous movement forward.
+
+It is designed to showcase:
+- My personal story and values  
+- My growing skills in web development  
+- My commitment to learning despite health challenges  
+
+This project serves as both a **personal branding website** and a **practice portfolio** for my journey in tech.
 
 ---
 
-## 🛠️ Built With
+## 🛠️ Technologies Used
 
-- **HTML5** – page structure and content  
-- **CSS3** – custom styling, gradients, and layout  
-- **Google Fonts** – Playfair Display & Poppins  
-- **GitHub Pages** – free hosting and deployment  
+- **HTML5** – structure and content  
+- **CSS3** – neon styling, layout, and responsiveness  
+- **JavaScript** – animated floating particle background  
+- **Google Fonts** – Orbitron & Poppins  
+- **GitHub Pages** – free website hosting  
 
 ---
 
 ## 📂 Project Structure
-
 ---
 
-## 🌷 Website Sections
+## 🌸 Website Sections
 
-- **Header** – Profile image, name, motto, and personal tagline  
-- **About Me** – Personal story, resilience, and creative goals  
-- **Skills** – Web development and creative design skills  
+- **Header** – Profile image, name, motto, and identity  
+- **About Me** – Personal story, resilience, and goals  
+- **Skills** – Web and creative skills  
 - **Contact** – Email and social links  
 
 ---
 
-## 🎯 Purpose
+## 🎯 Purpose of This Portfolio
 
-This portfolio was created to:
-- Practice and improve web development skills  
+This project was created to:
 - Build a professional online presence  
-- Share my journey, creativity, and passion  
-- Serve as a foundation for future projects  
+- Practice front-end web development skills  
+- Share my journey as a Lupus Warrior in tech  
+- Serve as a foundation for future projects and applications  
 
 ---
 
 ## 👩‍💻 Author
 
 **Paulyn Joy Manatlao**  
+2nd-Year Computer Science Student  
 Web Enthusiast • Creative Thinker • Lifelong Learner  
 
-🌸 *“Despite pain and challenge, strength and hope will lead you to victory.”*
+💬 *“Despite pain and challenge, strength and hope will lead you to victory.”*
 
 ---
 
-## 📌 Future Improvements
+## 🚀 Future Improvements
 
-- Add a portfolio/gallery section  
-- Enhance mobile responsiveness  
-- Add animations using JavaScript  
-- Showcase real projects and case studies
+- Add a projects/portfolio gallery  
+- Improve mobile responsiveness  
+- Separate JavaScript into `script.js`  
+- Add more interactive animations  
+- Showcase academic and personal projects
